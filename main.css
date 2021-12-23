@@ -1,0 +1,620 @@
+            @font-face {
+                font-family: 'alegreya';
+                src: url('./fonts/alegreyasanssc-black-webfont.woff2') format('woff2'), 
+                url('./fonts/alegreyasanssc-black-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            html {
+                height: 100%;
+                width: 1645px;
+                
+            }
+
+
+            body {
+                height: 100%;
+                width: 1645px;
+                font: 16px / 1.42 "Roboto", Arial, sans-serif;
+                color: #212121;
+                -webkit-font-smoothing: antialised;
+                -moz-osx-font-smoothing: grayscale;
+                background: #fcf5e6;
+            }
+
+            .wrapper {
+                overflow: hidden;
+                max-width: 1645px;
+                margin: 0 auto;
+                padding: 0px 60px;
+              
+            }
+            :root {
+                --yellow: #ffc92f;
+                --red: #d82727;
+                --black: #1b1b1b;
+                --titlesFont: 'Yanone Kaffeesatz', Arial, sans-serif;
+                --titlesText: "Roboto", Arial, sans-serif;
+                --edge_and_frame: #e0d9c8;
+                --vnfon: #fcf5e6;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul>li {
+                list-style: none;
+            }
+
+            .header {
+                
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background: url(./img/bg/hero.jpg) center center / cover no-repeat;
+            }
+
+            .header_guys {
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                height: 180px;
+            }
+
+            .header_guys_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 28px;
+            }
+
+            .header_guys_allword {
+                display: flex;
+                flex-direction: column;
+                margin-right: -100px;
+                z-index: 1;
+                color: white;
+                align-items: flex-start;
+            }
+
+            .header_guys_word {
+                display: flex;
+                text-transform: uppercase;
+                font-family: 'alegreya', Arial, sans-serif;
+                font-size: 32px;
+                line-height: 1;
+                padding: 0px 7px 5px;
+                margin-bottom: -3px;
+                background: black;
+            }
+
+            .header_guys_allword :nth-child(2n) {
+                margin-left: 5px;
+            }
+
+            .header_guys_word_yellow {
+                color: var(--yellow);
+            }
+
+            .mail {
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+            }
+
+            .mail_title {
+                margin-bottom: 3px;
+            }
+
+            .mail_content {
+                background: black;
+                color: var(--yellow);
+                padding: 12px 40px;
+            }
+
+            .product {
+                height: 850px;
+                position: relative;
+            }
+
+            .overal {
+                position: absolute;
+                background: var(--yellow);
+                left: 221px;
+                top: 105px;
+                width: 1123px;
+                height: 670px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+
+            .shirt_image {
+                display: none;
+                height: 447px;
+                width: 493px;
+                margin-top: 2%;
+                margin-left: 5%;
+            }
+
+            .shirt_image--show {
+                display: block;
+                width: 560px;
+            }
+
+            .info {
+                background: white;
+                height: 647px;
+                width: 568px;
+                margin: 13px;
+                font-family: var(--titlesText);
+                font-size: 20px;
+                margin-left: -53px;
+            }
+
+            .info_frame {
+                display: flex;
+                flex-direction: column;
+                height: 600px;
+                width: 485px;
+                display: flex;
+                padding: 30px
+            }
+
+            .article {
+                margin-bottom: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                color: var(--yellow);
+            }
+
+            .name {
+                font-family: var(--titlesFont);
+                font-weight: 700;
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+
+            .price {
+                font-family: var(--titlesFont);
+                font-size: 40px;
+                font-weight: 700;
+                background-color: var(--yellow);
+                width: 15%;
+                padding: 0px 12px;
+            }
+
+            .line_grey {
+                width: 550px;
+                height: 1px;
+                background: var(--edge_and_frame);
+                margin: 25px 0px 25px 0px;
+                left: -30px;
+                position: relative
+            }
+
+            .sostav_info {
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+            }
+
+            .sostav {
+                margin-bottom: 10px;
+            }
+
+            .line_grey_2 {
+                margin-top: 15px
+            }
+
+            .vubor_size {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 16px;
+                font-family: var(--titlesText);
+                font-weight: 700;
+            }
+
+            .vubor_size_word {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid var(--edge_and_frame);
+            }
+
+            .vubor_size_word_noactiv {
+                color: var(--edge_and_frame);
+            }
+
+            .vubor_size_word__link {
+                text-decoration: none;
+                color: var(--black);
+            }
+
+            .vubor_size_word--active {
+                background-color: var(--yellow);
+                border-color: var(--yellow);
+            }
+
+            .vubor_color {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                width: 200px;
+            }
+
+            .vubor_color_krug {
+                height: 20px;
+                width: 20px;
+                border-radius: 52px;
+                margin-right: -36px;
+                border: 3px solid var(--edge_and_frame);
+            }
+
+            .vubor_color_krug--active {
+                -webkit-box-shadow: 0px 0px 0px 4px rgba(255, 201, 47, 1);
+                -moz-box-shadow: 0px 0px 0px 4px rgba(255, 201, 47, 1);
+                box-shadow: 0px 0px 0px 4px rgba(255, 201, 47, 1);
+                border-color: white;
+            }
+
+            .vubor_color_krug_black {
+                background: var(--black);
+            }
+
+            .vubor_color_krug_white {
+                background: white;
+            }
+
+            .vubor_color_krug_green {
+                background: green;
+            }
+
+            .vubor_color_krug_blue {
+                background: blue;
+            }
+
+            .vubor_color_krug_red {
+                background: red;
+            }
+
+            .button_buy {
+                height: 53px;
+                width: 210px;
+                background: var(--yellow);
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 21px;
+                font-family: var(--titlesFont);
+                font-weight: 700;
+                font-size: 29px;
+                text-decoration: none;
+                color: black
+            }
+
+            .button_buy:hover {
+                background: red;
+                color: white;
+            }
+
+            .knopka_info {
+                font-size: 24px;
+                text-decoration: none;
+                font-family: var(--titlesFont);
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                color: var(--black);
+                padding: 5px 10px;
+            }
+
+            .knopka_info:hover {
+                color: var(--red);
+            }
+
+            .knopka_info--active {
+                background: var(--black);
+                color: var(--yellow);
+                display: flex;
+                pointer-events: none;
+            }
+
+            .knopka_info--active:not(.nohover):hover {
+                border: 1px solid red;
+            }
+
+            .allknopki {
+                width: 1645px;
+                display: flex;
+                justify-content: center;
+                height: 100px;
+            }
+
+            .knopki {
+                display: flex;
+                width: 685px;
+                height: 35px;
+                justify-content: space-between;
+            }
+
+            /*1инфо*/
+            .soderjanie {
+                display: flex;
+                border: 11px solid var(--yellow);
+                width: 1100px;
+                background: #fcf5e6;
+                margin-left: 225px;
+            }
+
+            .info_1 {
+                height: 280px;
+                width: 340px;
+                display: flex;
+                align-items: center;
+                margin-left: 35px;
+            }
+
+            .stroka {
+                margin-bottom: 8px;
+                display: flex;
+            }
+
+            .stirat_pri {
+                margin-left: 25px;
+            }
+
+            .stirat_pri_img {
+                width: 26px;
+                height: 26px;
+                margin-top: -5px;
+            }
+
+            .stirat_pri_img_sr {
+                margin-top: 5px;
+            }
+
+            .razdelitel {
+                height: 280px;
+                width: 1px;
+                background: var(--edge_and_frame);
+                margin-left: 9px;
+            }
+
+            .word_about {
+                display: block;
+                position: relative;
+                width: 600px;
+                top: 50px;
+                left: 50px;
+                font-size: 13, 5px;
+            }
+
+            /*Конец 1 инфо*/
+            .soderjanie2 {
+                height: 450px;
+                width: 1100px;
+                background: var(--vnfon);
+                border: 11px solid var(--yellow);
+                margin-left: 225px;
+                display: flex;
+            }
+
+            .soderjanie2 img {
+                height: 452px;
+                width: 1101px;
+            }
+
+            /*конец 2 инфо*/
+            .soderjanie3 {
+                height: 260px;
+                width: 1100px;
+                background: var(--vnfon);
+                border: 11px solid var(--yellow);
+                margin-left: 225px;
+                display: flex;
+            }
+
+            .stolbec1 {
+                margin-left: 92px;
+                margin-top: 42px;
+            }
+
+            .stolbec-razdelitel2 {
+                width: 1px;
+                background: var(--edge_and_frame);
+                margin-left: 110px;
+            }
+
+            .stolbec3 {
+                margin: 55px 50px;
+                font-size: 11pt;
+            }
+
+            .stroka2 {
+                margin: 10px 0px 10px
+            }
+
+            .soderjanie4 {
+                height: 260px;
+                width: 1100px;
+                background: var(--vnfon);
+                border: 11px solid var(--yellow);
+                margin-left: 225px;
+                display: flex;
+            }
+
+            .stolb1 {
+                margin-left: 64px;
+                margin-top: 67px;
+            }
+
+            .stolb1 img {
+                width: 225px;
+                height: 44px;
+            }
+
+            .stolrazdelitel2 {
+                width: 1px;
+                background: var(--edge_and_frame);
+                margin-left: 95px;
+            }
+
+            .stolb3 {
+                margin: 55px 45px 55px 45px;
+            }
+
+            .nonek {
+                display: none;
+            }
+
+            .nonek--show {
+                display: block;
+            }
+
+            .footer {
+                margin-bottom: 115px;
+                margin-top: 80px;
+                margin-left: 242px;
+            }
+
+            .footer__container {
+                width: 1105px;
+            }
+
+            .site-menu {
+                margin-bottom: 115px;
+            }
+
+            .site-menu__sections {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .site-menu__col {
+                margin-right: 20px;
+            }
+
+            .site-menu__col:last-child {
+                margin-right: 0px;
+            }
+
+            .site-menu__title {
+                font-family: var(--titlesFont);
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--black);
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+
+            .site-menu__item {
+                margin-bottom: 15px;
+            }
+
+            .site-menu__link {
+                color: #737373;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            .site-menu__link:hover {
+                color: var(--red);
+            }
+
+            .site-menu__text {
+                font-style: 15px;
+                color: var(--black);
+                margin-bottom: 30px;
+            }
+
+            .site-menu__text-row {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .extras {
+                display: flex;
+                width: 1105px;
+                margin-left: -10px;
+            }
+
+            .extras__col {
+                margin-right: 20px;
+                flex: 1;
+            }
+
+            .extras__col:last-child {
+                margin-right: 0px;
+            }
+
+            .extras__best {
+                text-align: center;
+                color: #fff;
+                background: #232323;
+                font-size: 50px;
+                font-weight: bold;
+                font-family: var(--titlesFont);
+                text-transform: uppercase;
+                padding: 39px 10%;
+                display: block;
+                text-decoration: none;
+                line-height: 1;
+            }
+
+            .extras__col-socials {
+                height: 100%;
+                background: url('./img/bg/pattern.png') center center / 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .socials {
+                display: flex;
+            }
+
+            .socials__item {
+                margin-right: 50px;
+            }
+
+            .socials__item:last-child {
+                margin-right: 0px;
+            }
+
+            .socials__link {
+                width: 38px;
+                height: 38px;
+                display: block;
+            }
+
+            .socials__link:hover .socials__icon {
+                fill: var(--red);
+            }
+
+            .socials__icon {
+                width: 100%;
+                height: 100%;
+            }
+          
+            .forvuravnivanie{
+                
+            }
+            .vir{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-left: 38px;
+            }
