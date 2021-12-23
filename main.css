@@ -8,14 +8,14 @@
 
             html {
                 height: 100%;
-                width: 1645px;
+                width: 100%;
                 
             }
 
 
             body {
                 height: 100%;
-                width: 1645px;
+                width: 100%;
                 font: 16px / 1.42 "Roboto", Arial, sans-serif;
                 color: #212121;
                 -webkit-font-smoothing: antialised;
@@ -50,7 +50,7 @@
             }
 
             .header {
-                
+                width: 100%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
