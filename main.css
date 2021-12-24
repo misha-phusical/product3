@@ -219,7 +219,7 @@
                 font-family: var(--titlesText);
                 font-weight: 700;
             }
-
+        
             .vubor_size_word {
                 height: 50px;
                 width: 50px;
@@ -228,7 +228,9 @@
                 align-items: center;
                 border: 2px solid var(--edge_and_frame);
             }
-
+            .vubor_size_word__link{
+                border: 2px solid black;
+            }
             .vubor_size_word_noactiv {
                 color: var(--edge_and_frame);
             }
@@ -236,6 +238,7 @@
             .vubor_size_word__link {
                 text-decoration: none;
                 color: var(--black);
+                border: 2px solid black;
             }
 
             .vubor_size_word--active {
@@ -330,9 +333,7 @@
                 pointer-events: none;
             }
 
-            .knopka_info--active:not(.nohover):hover {
-                border: 1px solid red;
-            }
+           
 
             .allknopki {
                 width: 1645px;
